@@ -1,0 +1,25 @@
+# ----------------------------------------
+# Dataset de instrumentos cirúrgicos — anotações apenas em caixas YOLO TXT
+# ----------------------------------------
+# Estrutura de pastas (já existente):
+# data/processed/
+# ├─ images/{train,val,test}/*.jpg
+# └─ labels_yolo/{train,val,test}/*.txt   ← caixas normalizadas (cx cy w h)
+
+# Pasta Raiz
+# path: C:\Users\alceu.brettas_visagi\Desktop\Graduação\instrubot\yolo 
+path: ../data/processed      
+
+train: images/train   # train images (relative to 'path')
+val: images/val       # val images (relative to 'path')
+test: images/test     # test images (optional)
+
+# Número de Classes
+nc: 4
+
+# Classes 
+names:
+  0: 1-Bisturi
+  1: 2-Tesoura_Curva
+  2: 3-Tesoura_Reta
+  3: 4-Pinca

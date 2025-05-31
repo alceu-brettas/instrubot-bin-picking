@@ -1,0 +1,30 @@
+# ----------------------------------------
+# Dataset com caixas + máscaras COCO geradas pelo SAM
+# ----------------------------------------
+# Estrutura de pastas:
+# data/processed/
+# ├─ images/{train,val,test}/*.jpg
+# ├─ labels_yolo/{train,val,test}/*.txt     ← caixas (opcional, ainda úteis)
+# └─ masks_coco/
+#     ├─ train.json
+#     ├─ val.json
+#     └─ test.json                         ← COCO polygons / RLE
+
+# Conf/data_mask.yaml
+train: ../data/processed/masks/train.json    # COCO-JSON por split
+val:   ../data/processed/masks/val.json
+test:  ../data/processed/masks/test.json
+
+
+# Número de Classes
+nc: 4
+
+# Classes 
+names:
+  0: 1-Bisturi
+  1: 2-Tesoura_Curva
+  2: 3-Tesoura_Reta
+  3: 4-Pinca
+
+# (opcional) diretório com PNGs das máscaras, caso queira checar visualmente
+mask_dir: ../data/processed/masks/png/
