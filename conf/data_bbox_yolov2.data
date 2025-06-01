@@ -1,6 +1,0 @@
-classes=4
-train  = data/processed/train.txt
-valid  = data/processed/val.txt
-test   = data/processed/test.txt
-names  = conf/classes.names
-backup = experiments/A_yolov2_baseline/weights/
