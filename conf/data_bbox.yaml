@@ -1,0 +1,21 @@
+# ----------------------------------------
+# Dataset de instrumentos cirúrgicos — anotações apenas em caixas YOLO TXT
+# ----------------------------------------
+
+# Pasta Raiz
+# path: C:\Users\alceu.brettas_visagi\Desktop\Graduação\instrubot\yolo 
+path: data/processed_det      
+
+train: images/train   # train images (relative to 'path')
+val: images/val       # val images (relative to 'path')
+test: images/test     # test images (optional)
+
+# Número de Classes
+nc: 4
+
+# Classes 
+names:
+  0: 1-Bisturi
+  1: 2-Tesoura_Curva
+  2: 3-Tesoura_Reta
+  3: 4-Pinca

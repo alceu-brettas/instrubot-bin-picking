@@ -1,0 +1,18 @@
+# ----------------------------------------
+# Dataset de instrumentos cirúrgicos — anotações com Segmentação
+# ----------------------------------------
+
+# Pasta Raiz
+# path: C:\Users\alceu.brettas_visagi\Desktop\Graduação\instrubot\yolo 
+path: data/processed_seg      
+
+train: images/train   # train images (relative to 'path')
+val: images/val       # val images (relative to 'path')
+test: images/test     # test images (optional)
+
+# Classes 
+names:
+  0: 1-Bisturi
+  1: 2-Tesoura_Curva
+  2: 3-Tesoura_Reta
+  3: 4-Pinca
